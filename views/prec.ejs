@@ -1,0 +1,56 @@
+
+
+<html>
+    <head>
+       
+        <title>
+<%=title%> 
+        </title>
+        <style>
+            form{
+    text-align: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    align-items: center;
+}
+body{
+    width: 600px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+.main-to-do{
+    margin: auto;
+    width: 600px;
+}
+
+        </style>
+        <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    </head>
+    <body>
+        <h1>To Do App</h1>
+        <hr>
+        <div class="main-to-do">
+<form action="/create-todo" method="post">
+    <p>Description</p>
+    <!-- <textarea name="" id="" cols="60" rows="10" required="what do u required to do "></textarea> -->
+<input type="text" aria-colspan="10" rows="10" placeholder="what do u required to do " required>
+<hr>
+<label for="cars">Choose a Task:</label>
+<select name="cars" id="cars">
+  <option value="Personal">Personal</option>
+  <option value="office">Office</option>
+  <option value="work">Work</option>
+  <option value="clean">Clean</option>
+</select>
+<label for="birthday">Due Date:</label>
+<input type="date" id="birthday" name="birthday">
+<hr>
+<button type="button">Add a Task</button>
+<button type="button">Click Me!</button>
+</form>
+</div>
+    </body>
+</html>
